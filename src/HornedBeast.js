@@ -1,14 +1,41 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
+
 
 
 class HornedBeast extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      favs: 0,
+    };
+  }
+  onFav = () => {
+    this.setState({ favs: this.state.favs + 1 });
+  }
+  onDislike = () => {
+    this.setState({ favs: this.state.favs - 1 });
+  }
   render() {
     return (
-      <>
-        <h2>{this.props.title}</h2>
-        <img src= {this.props.imageURL}  alt='animal' title={this.props.title} />
-        <p>{this.props.description}</p>
-      </>
+      <div className="m-1" id="container">
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src={this.props.imageURL} />
+          <Card.Body>
+            <Card.Title>{this.props.title}</Card.Title>
+            <Card.Text>
+              {this.props.description}
+            </Card.Text>
+            <p>Picture Likes: {this.state.favs}</p>
+            <Button onClick={this.onFav}> Like💗 </Button>
+            <Button onClick={this.onDislike}> Dislike💔 </Button>
+          </Card.Body>
+        </Card>
+
+
+      </div>
     );
   }
 }

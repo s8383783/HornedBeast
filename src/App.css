@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color:#3f718c;
+  color:navy;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .App-logo {
@@ -14,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #22304d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,4 +41,34 @@
 }
 img{
   width: 360px;
+  height: 280px;
+  display: inline-block;
+  border-radius: 16px;
+  border: solid navy 4px
 }
+
+
+button{ 
+  background-color: #ffa9ff;
+  color:#5b5faf;;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  border-radius: 16px;
+  padding: 10px;
+  margin-left: 20px;
+  font-style: italic;
+  font-weight:bold;
+  
+}
+#container{
+  display: inline-block;
+  padding: 20px;
+  border: navy solid 5px;
+  background-color:lightblue ;
+  border-radius: 16px;
+}
+#container:hover{
+  border-color: limegreen;
+  border-width: 8px;
+}
+
