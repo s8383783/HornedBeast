@@ -1,10 +1,2 @@
-Number and name of feature: 
-Feature Modal
-
-Estimate of time needed to complete: 3 hours
-
-Start time: 1:18pm
-
-Finish time: _____
-
-Actual time needed to complete: _____
+# Author: Shania Kimbrough
+This app is called Gallery of Horns. Gallery of horns is an app that will display animals that have horns..both real and imaginary. 

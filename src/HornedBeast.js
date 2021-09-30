@@ -20,7 +20,7 @@ class HornedBeast extends React.Component {
   }
   selectBeast = () =>{ 
     this.props.showModal();
-    this.props.selectBeast(this.props.title, this.props.description, this.props.image_url);
+    this.props.selectBeast(this.props.title, this.props.description, this.props.imageURL);
 
   }
 
@@ -33,6 +33,7 @@ class HornedBeast extends React.Component {
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>
               {this.props.description}
+              <p> Number of Horns: {this.props.horns}</p>
             </Card.Text>
             <p>Picture Likes: {this.state.favs}</p>
             <Button onClick={this.onFav}> Like💗 </Button>

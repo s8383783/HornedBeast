@@ -6,6 +6,7 @@ import Header from './Header';
 import Main from './Main';
 import SelectedBeast from './SelectedBeast';
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -39,17 +40,20 @@ class App extends React.Component {
       <div className="App">
         <h1>Horned Beast</h1>
         <Header />
+        
         <Main
           showModal={this.showModal}
           closeModal={this.closeModal}
           selectBeast={this.selectBeast}
         />
         <Footer />
+        
         <SelectedBeast
           title = {this.state.selectedBeastTitle}
           description = {this.state.selectedBeastDescription}
           toggle={this.state.toggle}
           close={this.closeModal}
+          imageURL = {this.state.selectedBeastImage}
         />
       </div>
     );
