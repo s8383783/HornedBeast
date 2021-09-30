@@ -18,15 +18,22 @@ class HornedBeast extends React.Component {
   onDislike = () => {
     this.setState({ favs: this.state.favs - 1 });
   }
+  selectBeast = () =>{ 
+    this.props.showModal();
+    this.props.selectBeast(this.props.title, this.props.description, this.props.imageURL);
+
+  }
+
   render() {
     return (
       <div className="m-1" id="container">
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={this.props.imageURL} />
+          <Card.Img onClick = {this.selectBeast} variant="top" src={this.props.imageURL} />
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>
               {this.props.description}
+              <p> Number of Horns: {this.props.horns}</p>
             </Card.Text>
             <p>Picture Likes: {this.state.favs}</p>
             <Button onClick={this.onFav}> Like💗 </Button>

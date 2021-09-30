@@ -49,8 +49,6 @@ img{
 
 
 button{ 
-  background-color: #ffa9ff;
-  color:#5b5faf;;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: large;
   border-radius: 16px;
@@ -63,7 +61,7 @@ button{
 #container{
   display: inline-block;
   padding: 20px;
-  border: navy solid 5px;
+  border: navy solid 8px;
   background-color:lightblue ;
   border-radius: 16px;
 }
